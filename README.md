@@ -30,5 +30,5 @@ Coming soon.
 Authors
 ===========
 
-Manuel García / Twitter: [@mgdo85](https://www.twitter.com/mgdo85) / LinkedIn: [@mgdo85](http://es.linkedin.com/in/mgdo85/)
-Ramón García / Twitter: [@rmngrc](https://www.twitter.com/rmngrc) / LinkedIn: [@rmngrc](http://es.linkedin.com/in/rmngrc/)
+Manuel García / [@mgdo85 at twitter](https://www.twitter.com/mgdo85) / [linkedin](http://es.linkedin.com/in/mgdo85/)
+Ramón García / [@rmngrc at twitter](https://www.twitter.com/rmngrc) / [linkedin](http://es.linkedin.com/in/rmngrc/)
