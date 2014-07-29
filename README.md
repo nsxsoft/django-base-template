@@ -13,6 +13,7 @@ First of all, you need django installed in your machine globally. Why? Well, you
 We are going to place all our projects in the ``Sites`` folder (common place for Mac users). So, we need to:
 
     $ mkdir -p ~/Sites/<project_name>
+    $ cd ~/Sites/<project_name>
     $ django-admin.py startproject --template=https://github.com/mgdo85/django-base-template/archive/master.zip --extension=py,rst,rb,html,gitignore <project_name> .
 
 
