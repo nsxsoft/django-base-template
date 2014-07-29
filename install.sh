@@ -1,9 +1,5 @@
 #!/bin/sh
 
-# Ask user for ROOT password one single time
-echo -n Password:
-read -s password
-
 # Install django dependencies
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew install python
@@ -32,5 +28,11 @@ source ~/.profile
 mkdir -p ~/Sites/{{ project_name|lower }}
 mkvirtualenv -a ~/Sites/{{ project_name|lower }} {{ project_name|lower }}
 
-# Install dependencies for development
+# Activate virtualenv and install dependencies for development
+workon {{ project_name|lower }}
 pip install -r requirements/development.txt
+deactivate
+
+# Add settings to virtualenv
+echo "DJANGO_SETTINGS_MODULE=\"{{ project_name|lower }}.settings_development\"" >> ~/.virtualenvs/{{ project_name|lower }}/bin/postactivate
+echo "export DJANGO_SETTINGS_MODULE" >> ~/.virtualenvs/{{ project_name|lower }}/bin/postactivate
