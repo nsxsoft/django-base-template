@@ -1,0 +1,7 @@
+Django
+pytz
+Fabric
+South
+PIL
+django_compressor
+django-grappelli
