@@ -6,6 +6,9 @@ brew install python
 brew install pillow
 pip install virtualenvwrapper
 
+# Rename `project_name`
+mv project_name {{ project_name|lower }}
+
 # Update .profile
 if [[ "$PATH" == */usr/local/bin*  || "$PATH" == */usr/local/share/python* ]]
 then
