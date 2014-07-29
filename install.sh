@@ -11,7 +11,7 @@ brew install pillow
 pip install virtualenvwrapper
 
 # Update .profile
-if [[ "$PATH" == */usr/local/bin* ]]
+if [[ "$PATH" == */usr/local/bin*  || "$PATH" == */usr/local/share/python* ]]
 then
     echo "PATH=/usr/local/bin:\$PATH" >> ~/.profile
     echo "PATH=/usr/local/share/python:\$PATH" >> ~/.profile
