@@ -18,7 +18,8 @@ We are going to place all our projects in the ``Sites`` folder (common place for
 
 Then, the ``install.sh`` script helps you to install all the dependencies, configure your development environment, create the virtualenv for this project and finally install all the project requirements:
 
-    $ ./install.sh
+    $ chmod a+x install.sh
+    $ source install.sh
 
 
 Next steps
