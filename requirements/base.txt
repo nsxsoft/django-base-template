@@ -2,6 +2,6 @@ Django
 pytz
 Fabric
 South
-PIL
+Pillow
 django_compressor
 django-grappelli
