@@ -71,6 +71,13 @@ $ django-admin.py startproject --template=https://github.com/mgdo85/django-base-
 $ pip install -r requirements/development.txt
 ```
 
+Add the lines below at the end of the file ``postactivate``:
+
+```
+$ echo "DJANGO_SETTINGS_MODULE=\"<project_name>.conf.settings_development\""  >> ~/.virtualenvs/<project_name>/bin/postactivate
+$ echo "export DJANGO_SETTINGS_MODULE"  >> ~/.virtualenvs/<project_name>/bin/postactivate
+```
+
 
 
 Next Steps
