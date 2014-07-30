@@ -8,9 +8,8 @@ A modern django (1.6) template for new projects.
 Authors
 =======
 
-- Manuel García / [@mgdo85 at twitter](https://www.twitter.com/mgdo85) / [linkedin](http://es.linkedin.com/in/mgdo85/)
-
-- Ramón García / [@rmngrc at twitter](https://www.twitter.com/rmngrc) / [linkedin](http://es.linkedin.com/in/rmngrc/)
+- Manuel García / [@mgdo85 at twitter](https://www.twitter.com/mgdo85) / [linkedin](http://es.linkedin.com/in/mgdo85/) 
+- Ramón García / [@rmngrc at twitter](https://www.twitter.com/rmngrc) / [linkedin](http://es.linkedin.com/in/rmngrc/) 
 
 
 Feel free to contact us for feedback or contributions. This project is still in hard development.
@@ -24,42 +23,53 @@ If you are an experienced django developer, probably you can skip this step, but
 
 1. Install Homebrew, Python 2.7 and some dependencies:
 
-    $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-    $ brew install python
-    $ brew install pillow
-    $ pip install virtualenvwrapper
+```
+$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+$ brew install python
+$ brew install pillow
+$ pip install virtualenvwrapper
+```
 
 2. Then, add the lines at the end of your ``.profile`` file:
 
-    $ echo "PATH=/usr/local/bin:/usr/local/share/python:\$PATH" >> ~/.profile
-    $ echo "export PATH" >> ~/.profile
-    $ echo "export WORKON_HOME=\$HOME/.virtualenvs" >> ~/.profile
-    $ echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
-    $ echo "export PIP_VIRTUALENV_BASE=\$WORKON_HOME" >> ~/.profile
+```
+$ echo "PATH=/usr/local/bin:/usr/local/share/python:\$PATH" >> ~/.profile
+$ echo "export PATH" >> ~/.profile
+$ echo "export WORKON_HOME=\$HOME/.virtualenvs" >> ~/.profile
+$ echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
+$ echo "export PIP_VIRTUALENV_BASE=\$WORKON_HOME" >> ~/.profile
+```
 
 3. Then, reload your ``.profile`` settings:
 
-    $ source .profile
+```
+$ source .profile
+```
 
 4. Configure your virtual environment:
 
-    $ mkdir -p ~/Sites/<project_name>
-    $ mkvirtualenv -a ~/Sites/<project_name> <project_name>
+```
+$ mkdir -p ~/Sites/<project_name>
+$ mkvirtualenv -a ~/Sites/<project_name> <project_name>
+```
 
 5. And finally, install django in this virtual environment. Don't forget to use ``workon <project_name>`` if your are not currently working with the ``<project_name>``virtual env.
 
-    $ pip install django
+```
+$ pip install django
+```
 
 
 
 Download project
 ================
 
-As simple as:
+As simple as (remember, ``workon <project_name>`` if not activated):
 
-    $ workon <project_name>
-    $ django-admin.py startproject --template=https://github.com/mgdo85/django-base-template/archive/master.zip --extension=py,rst,rb,html,gitignore <project_name> .
-    $ pip install -r requirements/development.txt
+```
+$ django-admin.py startproject --template=https://github.com/mgdo85/django-base-template/archive/master.zip --extension=py,rst,rb,html,gitignore <project_name> .
+$ pip install -r requirements/development.txt
+```
 
 
 
