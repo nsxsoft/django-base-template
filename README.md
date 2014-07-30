@@ -21,7 +21,7 @@ Getting started
 
 If you are an experienced django developer, probably you can skip this step, but if you are new in django you need to configure your environment to start using this template. For Mac users:
 
-1. Install Homebrew, Python 2.7 and some dependencies:
+- Install Homebrew, Python 2.7 and some dependencies:
 
 ```
 $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
@@ -30,7 +30,7 @@ $ brew install pillow
 $ pip install virtualenvwrapper
 ```
 
-2. Then, add the lines at the end of your ``.profile`` file:
+- Then, add the lines at the end of your ``.profile`` file:
 
 ```
 $ echo "PATH=/usr/local/bin:/usr/local/share/python:\$PATH" >> ~/.profile
@@ -40,20 +40,20 @@ $ echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
 $ echo "export PIP_VIRTUALENV_BASE=\$WORKON_HOME" >> ~/.profile
 ```
 
-3. Then, reload your ``.profile`` settings:
+- Reload your ``.profile`` settings:
 
 ```
 $ source .profile
 ```
 
-4. Configure your virtual environment:
+- Configure your virtual environment:
 
 ```
 $ mkdir -p ~/Sites/<project_name>
 $ mkvirtualenv -a ~/Sites/<project_name> <project_name>
 ```
 
-5. And finally, install django in this virtual environment. Don't forget to use ``workon <project_name>`` if your are not currently working with the ``<project_name>``virtual env.
+- And finally, install django in this virtual environment. Don't forget to use ``workon <project_name>`` if your are not currently working with the ``<project_name>``virtual env.
 
 ```
 $ pip install django
