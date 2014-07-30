@@ -16,7 +16,7 @@ Feel free to contact us for feedback or contributions. This project is still in 
 
 
 
-Getting started
+Getting Started
 ===============
 
 If you are an experienced django developer, probably you can skip this step, but if you are new in django you need to configure your environment to start using this template. For Mac users:
@@ -61,7 +61,7 @@ $ pip install django
 
 
 
-Download project
+Download Project
 ================
 
 As simple as (remember, ``workon <project_name>`` if not activated):
@@ -73,7 +73,7 @@ $ pip install -r requirements/development.txt
 
 
 
-Next steps
+Next Steps
 ===========
 
 Coming soon. 
