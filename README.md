@@ -69,6 +69,7 @@ As simple as (remember, ``workon <project_name>`` if not activated):
 ```
 $ django-admin.py startproject --template=https://github.com/mgdo85/django-base-template/archive/master.zip --extension=py,rst,rb,html,gitignore <project_name> .
 $ pip install -r requirements/development.txt
+$ mv project_name <project_name>
 ```
 
 Add the lines below at the end of the file ``postactivate``:
