@@ -122,3 +122,10 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
+
+
+# -----------------------------------------------------------------------------
+# Sites Framework
+# -----------------------------------------------------------------------------
+
+SITE_ID = 1
