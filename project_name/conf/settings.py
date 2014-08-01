@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 import os
+import sys
 
 
 # -----------------------------------------------------------------------------
@@ -20,6 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SITE_ROOT = os.path.dirname(os.path.realpath(BASE_DIR))
 MEDIA_ROOT = os.path.realpath(os.path.join(SITE_ROOT, 'media'))
 STATIC_ROOT = os.path.realpath(os.path.join(SITE_ROOT, 'static'))
+sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 
 
 # -----------------------------------------------------------------------------
