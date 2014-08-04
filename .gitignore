@@ -1,11 +1,13 @@
 # gitignore for django using pyCharm
  
 # files to ignore
- 
+
+
 # extensions to ignore
 *.log
 *.pot
 *.pyc
+*.sqlite3
  
 # directories to ignore
 .idea/
